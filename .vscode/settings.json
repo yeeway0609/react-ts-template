@@ -1,0 +1,9 @@
+{
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.expand": false,
+  "explorer.fileNesting.patterns": {
+    "README.md": "LICENSE",
+    "package.json": ".gitignore, .nvmrc, package-lock.json, pnpm-lock.yaml",
+    "tsconfig.json": "tsconfig.app.json, tsconfig.node.json, next-env.d.ts",
+  }
+}
