@@ -1,6 +1,8 @@
-import { type Config } from 'prettier'
-
-const config: Config = {
+/**
+ * @see https://prettier.io/docs/configuration
+ * @type {import("prettier").Config}
+ */
+const config = {
   printWidth: 120,
   tabWidth: 2,
   useTabs: false,
@@ -10,7 +12,7 @@ const config: Config = {
   jsxSingleQuote: false,
   trailingComma: 'es5',
   bracketSpacing: true,
-  jsxBracketSameLine: false,
+  bracketSameLine: false,
   arrowParens: 'always',
   singleAttributePerLine: false,
   plugins: ['prettier-plugin-tailwindcss'],
