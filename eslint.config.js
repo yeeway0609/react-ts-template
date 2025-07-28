@@ -3,6 +3,7 @@ import js from '@eslint/js'
 import react from 'eslint-plugin-react'
 import reactHooks from 'eslint-plugin-react-hooks'
 import reactRefresh from 'eslint-plugin-react-refresh'
+import reactDom from 'eslint-plugin-react-dom'
 import ts from 'typescript-eslint'
 import prettier from 'eslint-plugin-prettier/recommended'
 
@@ -12,6 +13,7 @@ export default [
   react.configs.flat['jsx-runtime'],
   reactHooks.configs['recommended-latest'],
   reactRefresh.configs.vite,
+  reactDom.configs.recommended,
   ...ts.configs.recommended,
   prettier,
   {
