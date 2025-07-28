@@ -1,7 +1,5 @@
-build/*
-dist/*
-public/*
-.next/*
-node_modules/*
-package.json
+build/
+dist/
+.next/
+public/
 *.log

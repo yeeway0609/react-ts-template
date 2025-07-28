@@ -34,7 +34,17 @@ export default [
       },
     },
     rules: {
-      '@typescript-eslint/no-unused-vars': 'warn',
+      '@typescript-eslint/no-explicit-any': 'warn',
+      '@typescript-eslint/no-unused-vars': 'off',
+      '@typescript-eslint/consistent-type-imports': ['warn', { prefer: 'type-imports' }],
+      'react/no-unstable-nested-components': ['warn', { allowAsProps: true }],
+      'no-multi-str': 'warn',
+      'prefer-template': 'warn',
+      'func-style': ['warn', 'declaration', { allowArrowFunctions: true }],
+      'arrow-body-style': ['warn', 'as-needed'],
+      'implicit-arrow-linebreak': ['warn', 'beside'],
+      'prefer-arrow-callback': ['warn'],
+      'padded-blocks': ['warn', { blocks: 'never', classes: 'never', switches: 'never' }],
     },
   },
 ]
